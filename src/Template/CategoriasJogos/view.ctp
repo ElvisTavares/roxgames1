@@ -7,19 +7,19 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Categorias Jogo'), ['action' => 'edit', $categoriasJogo->id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Categorias Jogo'), ['action' => 'delete', $categoriasJogo->id], ['confirm' => __('Are you sure you want to delete # {0}?', $categoriasJogo->id)]) ?> </li>
-        <li><?= $this->Html->link(__('List Categorias Jogos'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Categorias Jogo'), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Jogos'), ['controller' => 'Jogos', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Jogo'), ['controller' => 'Jogos', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('Editar Categorias'), ['action' => 'edit', $categoriasJogo->id]) ?> </li>
+        <li><?= $this->Form->postLink(__('Deletar Categorias'), ['action' => 'delete', $categoriasJogo->id], ['confirm' => __('Are you sure you want to delete # {0}?', $categoriasJogo->id)]) ?> </li>
+        <li><?= $this->Html->link(__('Listar Categorias'), ['action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('Nova Categoria'), ['action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('Listar Jogos'), ['controller' => 'Jogos', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('Novo Jogo'), ['controller' => 'Jogos', 'action' => 'add']) ?> </li>
     </ul>
 </nav>
 <div class="categoriasJogos view large-9 medium-8 columns content">
     <h3><?= h($categoriasJogo->id) ?></h3>
     <table class="vertical-table">
         <tr>
-            <th scope="row"><?= __('Jogo Categoria') ?></th>
+            <th scope="row"><?= __('Categoria') ?></th>
             <td><?= h($categoriasJogo->jogo_categoria) ?></td>
         </tr>
         <tr>
@@ -27,11 +27,11 @@
             <td><?= $this->Number->format($categoriasJogo->id) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Criacao Data') ?></th>
+            <th scope="row"><?= __('Data de Criacao') ?></th>
             <td><?= h($categoriasJogo->criacao_data) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Modificao Data') ?></th>
+            <th scope="row"><?= __('Data de Modificao') ?></th>
             <td><?= h($categoriasJogo->modificao_data) ?></td>
         </tr>
     </table>

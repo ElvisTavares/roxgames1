@@ -6,10 +6,10 @@
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Jogo'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Categorias Jogos'), ['controller' => 'CategoriasJogos', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Categorias Jogo'), ['controller' => 'CategoriasJogos', 'action' => 'add']) ?></li>
+        <li class="heading"><?= __('Ações') ?></li>
+        <li><?= $this->Html->link(__('Novo Jogo'), ['action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('Lista de Categoria'), ['controller' => 'CategoriasJogos', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('Nova Categoria'), ['controller' => 'CategoriasJogos', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="jogos index large-9 medium-8 columns content">
@@ -22,7 +22,7 @@
                 <th scope="col"><?= $this->Paginator->sort('categorias_jogo_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('criacao_data') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('modificacao_data') ?></th>
-                <th scope="col" class="actions"><?= __('Actions') ?></th>
+                <th scope="col" class="actions"><?= __('Ações') ?></th>
             </tr>
         </thead>
         <tbody>
@@ -34,9 +34,9 @@
                 <td><?= h($jogo->criacao_data) ?></td>
                 <td><?= h($jogo->modificacao_data) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $jogo->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $jogo->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $jogo->id], ['confirm' => __('Are you sure you want to delete # {0}?', $jogo->id)]) ?>
+                    <?= $this->Html->link(__('Visualizar'), ['action' => 'view', $jogo->id]) ?>
+                    <?= $this->Html->link(__('Editar'), ['action' => 'edit', $jogo->id]) ?>
+                    <?= $this->Form->postLink(__('Deletar'), ['action' => 'delete', $jogo->id], ['confirm' => __('Are you sure you want to delete # {0}?', $jogo->id)]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>

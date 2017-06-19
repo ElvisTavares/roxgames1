@@ -5,16 +5,16 @@
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('List Categorias Jogos'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Jogos'), ['controller' => 'Jogos', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Jogo'), ['controller' => 'Jogos', 'action' => 'add']) ?></li>
+        <li class="heading"><?= __('Ações') ?></li>
+        <li><?= $this->Html->link(__('Categorias de Jogos'), ['action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('Lista de Jogos'), ['controller' => 'Jogos', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('Novo Jogo'), ['controller' => 'Jogos', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="categoriasJogos form large-9 medium-8 columns content">
     <?= $this->Form->create($categoriasJogo) ?>
     <fieldset>
-        <legend><?= __('Add Categorias Jogo') ?></legend>
+        <legend><?= __('Adicionar Categorias') ?></legend>
         <?php
             echo $this->Form->control('jogo_categoria');
             echo $this->Form->control('criacao_data');

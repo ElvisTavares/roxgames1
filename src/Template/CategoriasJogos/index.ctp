@@ -6,14 +6,14 @@
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Categorias Jogo'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Jogos'), ['controller' => 'Jogos', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Jogo'), ['controller' => 'Jogos', 'action' => 'add']) ?></li>
+        <li class="heading"><?= __('Ações') ?></li>
+        <li><?= $this->Html->link(__('Nova Categoria'), ['action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('Lista de Jogos'), ['controller' => 'Jogos', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('Novo Jogo'), ['controller' => 'Jogos', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="categoriasJogos index large-9 medium-8 columns content">
-    <h3><?= __('Categorias Jogos') ?></h3>
+    <h3><?= __('Categorias') ?></h3>
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
@@ -32,9 +32,9 @@
                 <td><?= h($categoriasJogo->criacao_data) ?></td>
                 <td><?= h($categoriasJogo->modificao_data) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $categoriasJogo->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $categoriasJogo->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $categoriasJogo->id], ['confirm' => __('Are you sure you want to delete # {0}?', $categoriasJogo->id)]) ?>
+                    <?= $this->Html->link(__('Visualizar'), ['action' => 'view', $categoriasJogo->id]) ?>
+                    <?= $this->Html->link(__('Editar'), ['action' => 'edit', $categoriasJogo->id]) ?>
+                    <?= $this->Form->postLink(__('Deletar'), ['action' => 'delete', $categoriasJogo->id], ['confirm' => __('Are you sure you want to delete # {0}?', $categoriasJogo->id)]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>
