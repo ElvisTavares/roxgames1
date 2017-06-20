@@ -3,7 +3,7 @@
 [![Build Status](https://img.shields.io/travis/cakephp/app/master.svg?style=flat-square)](https://travis-ci.org/cakephp/app)
 [![License](https://img.shields.io/packagist/l/cakephp/app.svg?style=flat-square)](https://packagist.org/packages/cakephp/app)
 
-![cakePhp](https://www.google.com.br/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiY5d2bi8vUAhXMhpAKHWNLB84QjRwIBw&url=https%3A%2F%2Fcakephp.org%2F&psig=AFQjCNFpXi2gCM7S6MRpR3UCUuS-sh9RFw&ust=1498002200907114)
+![cakePhp](https://cakephp.org/img/trademarks/logo-2.jpg)
 
 O objetivo desse framework foi de criar um sistema de controle de uma loja de games em [CakePHP](http://cakephp.org) 3.x.
 
