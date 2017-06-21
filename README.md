@@ -46,7 +46,7 @@ As desvantagens na utilização foi que não foi possível instala-lo no Linux.
 
 ## Video demosntrativo
 
-https://youtu.be/usk2AHbd-1Q
+https://www.youtube.com/watch?v=b-f4ZW1_wzs
 
 
 
